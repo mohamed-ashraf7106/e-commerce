@@ -1,0 +1,128 @@
+:root{
+  --back-ground- : #F2EFE5;
+  --sec-back-ground- :#E3E1D9;
+  --thi-back-ground- : #C7C8CC;
+  --qua-back-ground- : #B4B4B8;
+  --pen-back-ground- : #9c9ca0;
+}
+.checkout{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100vh - 53px);
+  border-top: 1px solid var(--qua-back-ground-);
+  max-height: calc(100vh - 52px);
+  margin-top: 52px;
+}
+body{
+  overflow: hidden;
+  max-height: 100vh;
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.items{
+  border-right: 1px solid var(--qua-back-ground-);
+  max-height: calc(100vh - 52px);
+  overflow-y: scroll;
+  scrollbar-width: none;
+  margin-bottom: 20px;
+
+}
+.itemList{
+  display: grid;
+  max-height: 100%;
+  grid-template-columns: 1fr;
+  padding: 10px;
+  gap: 10px;
+}
+.itemList li{
+  display: flex;
+  border: 1px solid var(--qua-back-ground-);
+  border-radius: 5px;
+  background-color: var(--sec-back-ground-);
+  height: 200px;
+  gap: 10px;
+}
+button{cursor: pointer;}
+.image{
+  width: 50%;
+  min-width: 50%;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid var(--qua-back-ground-);
+}
+.itemData{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  padding-bottom: 10px;
+  width: 50%;
+  padding-right: 10px;
+}
+.itemData p{
+  font-weight: bold;
+}
+p span{
+  display: block;
+}
+.itemData button{
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: bold;
+  overflow: hidden;
+  color: black;
+  background-color: var(--qua-back-ground-);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none;
+}
+.remove{
+  border-radius: 5px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+.checktotal{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--qua-back-ground-);
+  background-color: var(--sec-back-ground-);
+}
+.check{
+  padding: 10px;
+}
+.check p{
+  font-size: large;
+  font-weight: bold;
+}
+.removeCart{
+  color: black;
+}
+.checktotal button{
+  padding: 10px;
+  border: none;
+  background-color: var(--qua-back-ground-);
+  outline: none;
+  color: white;
+  border-radius: 5px;
+}
+.remove{
+  margin: 0px auto;
+}
+@media (max-width:767px) {
+  .checkout{
+    display: flex;
+    flex-direction: column;
+  }
+  .items{
+  height: fit-content;
+  min-height: unset;
+}
+}

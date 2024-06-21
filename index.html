@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHOP</title>
+</head>
+<body>
+  <button class="darkMode" style="position: fixed;z-index: 1000;top: 300px;left:10px;cursor: pointer;padding: 7px 9px;border-radius: 50%;outline: none;border: 1px solid #B4B4B8;background-color: #6e6ea1;color: white;"><i class="fa-solid fa-moon"></i></button>
+  <header>
+    <div class="logo">
+      <p class="logoText">LOGO</p>
+    </div>
+    <div class="search">
+      <input type="text" class="searchBar" placeholder="search">
+    </div>
+    <div class="profile flex">
+      <div class="cart">
+        <i class="fa-solid fa-cart-shopping cartIcon"></i>
+      </div>
+      <img src="media/profile/istockphoto-1159738052-170667a.jpg" alt="">
+    </div>
+  </header>
+  <div class="filterToggler">
+    Filter
+  </div>
+  <nav class="displayNone">
+    <div class="category">
+      <label for="category">Category</label>
+      <select name="category" id="category" >
+        <option value="bags">Bags</option>
+        <option value="clothing">Clothing</option>
+        <option value="miscellaneous">Miscellaneous</option>
+        <option value="beauty">Beauty</option>
+        <option value="music">Music</option>
+        <option value="toys">Toys</option>
+        <option value="sports">Sports</option>
+      </select>
+    </div>
+    <div class="brand">
+      <label for="brand">Brand</label>
+      <select name="brand" id="brand">
+        <option value="All">All</option>
+        <option value="Addidas">Addidas</option>
+        <option value="Smash">Smash</option>
+        <option value="Nike">Nike</option>
+        <option value="Gege">Gege</option>
+        <option value="Forest">Forest</option>
+        <option value="Polda">Polda</option>
+        <option value="Owl">Owl</option>
+        <option value="Unknown">Unknown</option>
+      </select>
+    </div>
+    <div class="price">
+      <label for="price">Price</label>
+      <select name="price" id="price">
+        <option value="2500">0-2500</option>
+        <option value="5000">2500-5000</option>
+        <option value="7500">5000-7500</option>
+        <option value="1000000">7500+</option>
+      </select>
+    </div>
+    <div class="filter">
+      <button class="filterbtn">filter</button>
+    </div>
+  </nav>
+  <div class="products">
+  </div>
+  <div class="showmore">
+    <button class="showmorebtn">Show more</button>
+  </div>
+  <script type="module" src="js/products.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

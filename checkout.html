@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- included main.css  -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/checkout.css">
+  <!-- included main.css  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+</head>
+<body>
+  <button class="darkMode" style="position: fixed;z-index: 1000;top: 300px;left:10px;cursor: pointer;padding: 7px 9px;border-radius: 50%;outline: none;border: 1px solid #B4B4B8;background-color: #6e6ea1;color: white;"><i class="fa-solid fa-moon"></i></button>
+  <header>
+    <div class="logo">
+      <p class="logoText">LOGO</p>
+    </div>
+    <div class="profile flex">
+      <div class="cart">
+        <i class="fa-solid fa-cart-shopping cartIcon"></i>
+      </div>
+      <img src="media/profile/istockphoto-1159738052-170667a.jpg" alt="">
+    </div>
+  </header>
+  <div class="checkout">
+    <div class="items">
+      <ul class="itemList">
+      </ul>
+    </div>
+    <div class="check">
+      <div class="checktotal">
+        <p class="total">Total:0</p>
+        <p class="totalTax">Total after tax:0</p>
+        <button class="order">order</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="js/products.js"></script>
+  <script type="module" src="js/checkout.js"></script>
+</body>
+</html>
